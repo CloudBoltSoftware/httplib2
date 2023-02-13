@@ -2,8 +2,8 @@ name: test
 on:
   push:
   pull_request:
-  schedule:
-    - cron: "34 4 */7 * *" # every week, time chosen by RNG
+  # schedule:
+    # - cron: "34 4 */7 * *" # every week, time chosen by RNG
 jobs:
   test:
     name: "test ${{ matrix.py }}"
